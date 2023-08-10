@@ -1,0 +1,15 @@
+-------- 9/10/2022, 1:32:36 AM ---- 1.0.85 --------
+
+/opt/meshcentral/node_modules/meshcentral/apprelays.js:819
+                    if (obj.relayActive == true) { obj.relaySocket.pause(); obj.wsClient.send(chunk, function () { obj.relaySocket.resume(); }); }
+                                                                                         ^
+
+TypeError: Cannot read property 'send' of undefined
+    at Socket.<anonymous> (/opt/meshcentral/node_modules/meshcentral/apprelays.js:819:90)
+    at Socket.emit (events.js:198:13)
+    at Socket.Readable.read (_stream_readable.js:505:10)
+    at flow (_stream_readable.js:974:34)
+    at resume_ (_stream_readable.js:955:3)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+
+
